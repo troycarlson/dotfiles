@@ -11,15 +11,36 @@ Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 
-" fzf
-map ; :Files<CR>
+" fzf {{{
+augroup fzf
+  autocmd!
+  " Open fzf with ;
+  map ; :Files<CR>
 
-" NERDTree
-map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+  " Include hidden files in fzf search
+  let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+augroup END
+" }}}
 
-" Lightline
-set laststatus=2 " Required for lightline
+" NERDTree {{{
+augroup nerdtree
+  autocmd!
+
+  " Open with ctl+N
+  map <C-n> :NERDTreeToggle<CR>
+
+  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+augroup END
+" }}}
+
+" Lightline {{{
+augroup lightline
+  autocmd!
+
+  " Required for Lightline but not sure why
+  set laststatus=2
+augroup END
+" }}}
 
 " Vim Colorschemes
 colorscheme gruvbox

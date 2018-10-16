@@ -1,7 +1,3 @@
-set relativenumber
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
-set backspace=indent,eol,start
-
 call plug#begin('~/.vim/plugged')
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -10,6 +6,17 @@ Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 call plug#end()
+
+" General config {{{
+augroup general_config
+  autocmd!
+
+  set relativenumber
+  set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+  set backspace=indent,eol,start
+  colorscheme gruvbox
+augroup END
+" }}}
 
 " fzf {{{
 augroup fzf
@@ -42,5 +49,3 @@ augroup lightline
 augroup END
 " }}}
 
-" Vim Colorschemes
-colorscheme gruvbox

@@ -1,3 +1,7 @@
+" Mapleader {{{
+let mapleader="\<Space>"
+" }}}
+
 " General config {{{
 augroup general_config
   autocmd!
@@ -6,6 +10,7 @@ augroup general_config
   set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
   set backspace=indent,eol,start
   set timeoutlen=1000 ttimeoutlen=10
+  set re=1
   colorscheme gruvbox
 augroup END
 " }}}
@@ -18,6 +23,9 @@ augroup fzf
 
   " Include hidden files in fzf search
   let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+
+  noremap <silent> <leader>/ :History<CR>
+  noremap <silent> <leader>? :execute 'Ag ' . input('Ag/')<CR>
 augroup END
 " }}}
 

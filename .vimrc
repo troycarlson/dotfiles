@@ -7,7 +7,6 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'flazz/vim-colorschemes'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 call plug#end()

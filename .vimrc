@@ -1,12 +1,3 @@
-call plug#begin('~/.vim/plugged')
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'w0rp/ale'
-Plug 'tpope/vim-fugitive'
-call plug#end()
-
 " General config {{{
 augroup general_config
   autocmd!
@@ -14,6 +5,7 @@ augroup general_config
   set relativenumber
   set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
   set backspace=indent,eol,start
+  set timeoutlen=1000 ttimeoutlen=10
   colorscheme gruvbox
 augroup END
 " }}}
@@ -48,4 +40,13 @@ augroup lightline
   set laststatus=2
 augroup END
 " }}}
+
+call plug#begin('~/.vim/plugged')
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'w0rp/ale'
+Plug 'tpope/vim-fugitive'
+call plug#end()
 

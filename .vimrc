@@ -11,6 +11,7 @@ augroup general_config
   set backspace=indent,eol,start
   set timeoutlen=1000 ttimeoutlen=10
   set re=1
+  set clipboard^=unnamed
   colorscheme gruvbox
 augroup END
 " }}}

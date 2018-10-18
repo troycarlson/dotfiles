@@ -12,6 +12,10 @@ augroup general_config
   set timeoutlen=1000 ttimeoutlen=10
   set re=1
   set clipboard^=unnamed
+  set hlsearch
+
+  noremap <silent> <leader><Space> :noh<CR>
+
   colorscheme gruvbox
 augroup END
 " }}}
@@ -57,5 +61,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
+Plug 'wincent/terminus'
 call plug#end()
 

@@ -8,3 +8,9 @@ Sources:
 
 [Random person's setup notes](https://github.com/Siilwyn/my-dotfiles/tree/master/.my-dotfiles)
 
+### Resources
+
+[Karabiner Elements](https://pqrs.org/osx/karabiner/)
+
+I use this for the sole purpose of making my caps lock key behave like the escape key when pressed on it's own or like the control key when pressed with other keys. It's brilliant.
+

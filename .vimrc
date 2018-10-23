@@ -62,5 +62,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 Plug 'wincent/terminus'
+Plug 'farmergreg/vim-lastplace'
 call plug#end()
 

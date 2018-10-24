@@ -8,6 +8,7 @@ augroup general_config
 
   set relativenumber
   set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+  set autoindent
   set backspace=indent,eol,start
   set timeoutlen=1000 ttimeoutlen=10
   set re=1
@@ -64,5 +65,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'wincent/terminus'
 Plug 'farmergreg/vim-lastplace'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 call plug#end()
 

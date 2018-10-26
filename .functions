@@ -31,6 +31,6 @@ function kubecon() {
 function kubelog() {
   release=$1
   pod_name=$(hlweb_pod_name "$release")
-  kubectl logs $pod_name -c hlweb
+  kubectl logs $pod_name -c hlweb -f
 }
 

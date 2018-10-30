@@ -34,3 +34,6 @@ function kubelog() {
   kubectl logs $pod_name -c hlweb -f
 }
 
+function kubepods() {
+  kubectl get pods
+}

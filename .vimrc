@@ -54,6 +54,18 @@ augroup lightline
   set laststatus=2
 augroup END
 " }}}
+"
+" vim-fugitive {{{
+augroup fugitive
+  autocmd!
+
+  nnoremap <space>gs :Gstatus<CR>
+  nnoremap <space>gd :Gdiff<CR>
+  nnoremap <space>blame :Gblame<CR>
+  nnoremap <space>gb :Git branch<Space>
+  nnoremap <space>go :Git checkout<Space>
+augroup END
+" }}}
 
 call plug#begin('~/.vim/plugged')
 Plug '/usr/local/opt/fzf'

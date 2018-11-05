@@ -34,6 +34,13 @@ function kubelog() {
   kubectl logs $pod_name -c hlweb -f
 }
 
+# Bash shell on the hlweb pod for a release
+function kubeshell() {
+  release=$1
+  pod_name=$(hlweb_pod_name "$release")
+  kubectl exec $pod_name -c hlweb -it -- /bin/bash
+}
+
 function kubepods() {
   kubectl get pods
 }

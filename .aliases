@@ -9,8 +9,18 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 
+# Git
+alias gcl="git clone"
+alias gb="git branch"
+alias gf="git fetch"
+alias ga="git add"
+alias gd="git diff"
+alias gco="git checkout"
+alias gcm="git checkout master"
+alias gca="git commit -a"
+alias gst="git status"
+
 # Shortcuts
-alias g="git"
 alias v="vim"
 
 # Overrides

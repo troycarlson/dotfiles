@@ -17,7 +17,7 @@ alias ga="git add"
 alias gd="git diff"
 alias gco="git checkout"
 alias gcm="git checkout master"
-alias gca="git commit -a"
+alias gc="git commit"
 alias gst="git status"
 
 # Shortcuts

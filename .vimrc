@@ -15,7 +15,7 @@ augroup general_config
   set clipboard^=unnamed
   set hlsearch
 
-  noremap <silent> <leader><Space> :noh<CR>
+  noremap <silent> <leader>c :noh<CR>
 
   colorscheme gruvbox
 augroup END
@@ -83,5 +83,6 @@ Plug 'tpope/vim-rails'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 

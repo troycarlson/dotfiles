@@ -1,14 +1,46 @@
 # dotfiles
-TODO: Update this readme to document how I set up this repo on my machine.
 
-Sources:
+## Setup
+
+**1. Clone the repository**
+```shell
+git clone --bare <git-repo-url> $HOME/.dotfiles
+```
+
+**2. Define the alias in the current shell scope**
+```shell
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+```
+
+**3. Check out the repository content**
+```shell
+dots checkout
+```
+
+**4. Update variables**
+
+Review all of the files and update any usernames/variables for your own purposes.
+
+## Usage
+
+Use the `dots` alias to manage this repository just like you would a normal Git repository.
+
+```shell
+dots status
+dots pull
+dots add ~/.vimrc
+dots commit -m "Added a cool new Vim plugin"
+dots push
+```
+
+## Inspiration:
 [HN post](https://news.ycombinator.com/item?id=11070797)
 
 [Atlassian post](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
 [Random person's setup notes](https://github.com/Siilwyn/my-dotfiles/tree/master/.my-dotfiles)
 
-### Resources
+## Resources
 
 [Karabiner Elements](https://pqrs.org/osx/karabiner/)
 

@@ -1,7 +1,13 @@
 #!/bin/bash
 
 function godocs() {
-  godoc ${@:1} | less
+  if [ "$#" -ne 1 ]; then
+    sleep 2 &&
+    open /Applications/Google\ Chrome.app http://localhost:6060/pkg/ &
+    godoc -http=":6060"
+  else
+    godoc ${@:1} | less
+  fi
 }
 
 # =====================================

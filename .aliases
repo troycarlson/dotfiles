@@ -7,12 +7,12 @@ alias cd..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 
 # Git
 alias gcl="git clone"
 alias gb="git branch"
 alias gf="git fetch"
+alias gp="git pull"
 alias ga="git add"
 alias gd="git diff"
 alias gco="git checkout"

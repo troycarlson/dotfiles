@@ -28,7 +28,7 @@ augroup fzf
   map ; :Files<CR>
 
   " Include hidden files in fzf search
-  let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+  let $FZF_DEFAULT_COMMAND="find . -path '*/\.*' -type d -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//"
 
   noremap <silent> <leader>/ :History<CR>
   noremap <silent> <leader>? :execute 'Ag ' . input('Ag/')<CR>

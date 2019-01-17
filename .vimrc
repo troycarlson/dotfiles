@@ -85,5 +85,6 @@ Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
+Plug 'brooth/far.vim'
 call plug#end()
 

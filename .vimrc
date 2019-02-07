@@ -14,6 +14,8 @@ augroup general_config
   set re=1
   set clipboard^=unnamed
   set hlsearch
+  set ignorecase
+  set smartcase
 
   noremap <silent> <leader>c :noh<CR>
 

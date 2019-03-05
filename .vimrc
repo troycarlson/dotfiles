@@ -19,7 +19,8 @@ augroup general_config
 
   noremap <silent> <leader>c :noh<CR>
 
-  colorscheme gruvbox
+"  colorscheme gruvbox
+  colorscheme solarized8_dark
 augroup END
 " }}}
 
@@ -73,6 +74,7 @@ call plug#begin('~/.vim/plugged')
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'powerline/powerline'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'w0rp/ale'

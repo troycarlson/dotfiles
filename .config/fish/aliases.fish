@@ -2,11 +2,10 @@
 alias dots='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Navigation
-alias ..="cd .."
-alias cd..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
+function ..    ; cd .. ; end
+function ...   ; cd ../.. ; end
+function ....  ; cd ../../.. ; end
+function ..... ; cd ../../../.. ; end
 
 # Git
 alias gcl="git clone"
@@ -37,4 +36,4 @@ alias la="ls -lA"     # detailed file list with hidden files
 alias wh="which -aS"  # Informative version of which
 
 # Make sure tmux plays nicely with vim themes
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="env TERM=screen-256color-bce tmux"

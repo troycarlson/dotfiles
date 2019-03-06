@@ -10,7 +10,7 @@ brew update # latest Homebrew
 brew upgrade # latest formulae
 brew install fzf
 brew install the_silver_searcher
-brew install zsh
+brew install fish
 ```
 
 ## Setup
@@ -51,20 +51,30 @@ dots commit -m "Added a cool new Vim plugin"
 dots push
 ```
 
+## Fish Setup
+
+Install Oh My Fish and optionally a theme (I like agnoster). See the [Oh My Fish](https://ohmyz.sh/) docs for installation instructions.
+
+Install the agnoster theme:
+
+```shell
+omf install agnoster
+omf theme agnoster
+```
+
+## Resources
+
+[Oh My Fish](https://ohmyz.sh/)
+
+Oh My Fish provides core infrastructure to allow you to install packages which extend or modify the look of your shell.
+
+[Karabiner Elements](https://pqrs.org/osx/karabiner/)
+
+I use this for the sole purpose of making my caps lock key behave like the escape key when pressed on it's own or like the control key when pressed with other keys. It's brilliant.
+
 ## Inspiration:
 [HN post](https://news.ycombinator.com/item?id=11070797)
 
 [Atlassian post](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
 [Random person's setup notes](https://github.com/Siilwyn/my-dotfiles/tree/master/.my-dotfiles)
-
-## Resources
-
-[Oh My Zsh](https://ohmyz.sh/)
-
-"Oh My Zsh is a delightful, open source, community-driven framework for managing your Zsh configuration."
-
-[Karabiner Elements](https://pqrs.org/osx/karabiner/)
-
-I use this for the sole purpose of making my caps lock key behave like the escape key when pressed on it's own or like the control key when pressed with other keys. It's brilliant.
-

@@ -1,5 +1,18 @@
 # dotfiles
 
+## Prerequisites
+TODO: Move this to an executable script.
+
+There are a few Homebrew formulae this setup depends on.
+
+```shell
+brew update # latest Homebrew
+brew upgrade # latest formulae
+brew install fzf
+brew install the_silver_searcher
+brew install zsh
+```
+
 ## Setup
 
 **1. Clone the repository**

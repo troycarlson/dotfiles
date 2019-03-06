@@ -1,5 +1,5 @@
 # Required for my dotfile management setup
-alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dots='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Navigation
 alias ..="cd .."

@@ -17,7 +17,12 @@ alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dots checkout
 ```
 
-**4. Update variables**
+**4. Ignore untracked files**
+```shell
+dots config --local status.showUntrackedFiles no
+```
+
+**5. Update variables**
 
 Review all of the files and update any usernames/variables for your own purposes.
 
@@ -41,6 +46,10 @@ dots push
 [Random person's setup notes](https://github.com/Siilwyn/my-dotfiles/tree/master/.my-dotfiles)
 
 ## Resources
+
+[Oh My Zsh](https://ohmyz.sh/)
+
+"Oh My Zsh is a delightful, open source, community-driven framework for managing your Zsh configuration."
 
 [Karabiner Elements](https://pqrs.org/osx/karabiner/)
 

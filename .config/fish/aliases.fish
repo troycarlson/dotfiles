@@ -1,6 +1,9 @@
 # Required for my dotfile management setup
 alias dots='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# Make sure tmux plays nicely with vim themes
+alias tmux="env TERM=screen-256color-bce tmux"
+
 # Navigation
 function ..    ; cd .. ; end
 function ...   ; cd ../.. ; end
@@ -34,6 +37,3 @@ alias free="free -m"  # human-readable sizes
 alias ll="ls -l"      # detailed file list
 alias la="ls -lA"     # detailed file list with hidden files
 alias wh="which -aS"  # Informative version of which
-
-# Make sure tmux plays nicely with vim themes
-alias tmux="env TERM=screen-256color-bce tmux"

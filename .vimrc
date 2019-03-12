@@ -49,15 +49,21 @@ augroup nerdtree
 augroup END
 " }}}
 
-" Lightline {{{
-augroup lightline
+" Airline {{{
+augroup airline_config
   autocmd!
-
-  " Required for Lightline but not sure why
-  set laststatus=2
+  let g:airline_theme='solarized'
+  let g:airline_solarized_bg='dark'
+  let g:airline_powerline_fonts = 1
+  let g:airline_enable_syntastic = 1
+  "let g:airline#extensions#tabline#buffer_nr_format = '%s '
+  "let g:airline#extensions#tabline#buffer_nr_show = 1
+  "let g:airline#extensions#tabline#enabled = 1
+  "let g:airline#extensions#tabline#fnamecollapse = 0
+  "let g:airline#extensions#tabline#fnamemod = ':t'
 augroup END
 " }}}
-"
+
 " vim-fugitive {{{
 augroup fugitive
   autocmd!
@@ -73,7 +79,8 @@ augroup END
 call plug#begin('~/.vim/plugged')
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'powerline/powerline'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'

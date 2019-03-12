@@ -16,10 +16,10 @@ augroup general_config
   set hlsearch
   set ignorecase
   set smartcase
+  set noshowmode
 
   noremap <silent> <leader>c :noh<CR>
 
-"  colorscheme gruvbox
   colorscheme solarized8_dark
 augroup END
 " }}}

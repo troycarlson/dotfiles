@@ -21,6 +21,7 @@ alias gco="git checkout"
 alias gcm="git checkout master"
 alias gc="git commit"
 alias gst="git status"
+alias push="git push"
 
 # Shortcuts
 alias v="vim"

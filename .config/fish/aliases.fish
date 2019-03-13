@@ -27,6 +27,7 @@ alias push="git push"
 alias v="vim"
 alias rserve="bundle exec rails s"
 alias rcon="bundle exec rails c"
+alias zzz="pmset displaysleepnow"
 
 # Overrides
 alias sudo="sudo -E " # carry over environment to sudo commands

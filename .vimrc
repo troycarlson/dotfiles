@@ -41,6 +41,7 @@ augroup END
 " NERDTree {{{
 augroup nerdtree
   autocmd!
+  let NERDTreeShowHidden=1
 
   " Open with ctl+N
   map <C-n> :NERDTreeToggle<CR>

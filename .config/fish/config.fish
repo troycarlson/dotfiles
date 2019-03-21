@@ -1,4 +1,5 @@
 set default_user "tcarlson"
+fish_vi_key_bindings
 
 source ~/.config/fish/aliases.fish
 source ~/.config/fish/functions.fish

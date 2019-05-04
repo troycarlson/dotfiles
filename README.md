@@ -72,7 +72,7 @@ Oh My Fish provides core infrastructure to allow you to install packages which e
 
 I use this for the sole purpose of making my caps lock key behave like the escape key when pressed on it's own or like the control key when pressed with other keys. It's brilliant.
 
-## Inspiration:
+## Inspiration
 [HN post](https://news.ycombinator.com/item?id=11070797)
 
 [Atlassian post](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)

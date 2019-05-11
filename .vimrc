@@ -39,9 +39,13 @@ augroup END
 augroup nerdtree
   autocmd!
   let NERDTreeShowHidden=1
+  let NERDTreeIgnore = ['\.swp$']
 
   " Open with ctl+N
   map <C-n> :NERDTreeToggle<CR>
+
+  " Highlight current file in tree
+  nmap <leader>f :NERDTreeFind<CR>
 
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 augroup END

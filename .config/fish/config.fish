@@ -1,4 +1,4 @@
-set default_user "tcarlson"
+set default_user "troycarlson"
 fish_vi_key_bindings
 
 source ~/.config/fish/aliases.fish

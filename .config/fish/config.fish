@@ -10,3 +10,6 @@ set PATH $HOME/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
 
 set -g fish_user_paths "/usr/local/opt/libpq/bin" $fish_user_paths
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/troycarlson/google-cloud-sdk/path.fish.inc' ]; . '/Users/troycarlson/google-cloud-sdk/path.fish.inc'; end

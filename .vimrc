@@ -24,17 +24,14 @@ augroup general_config
 augroup END
 " }}}
 
-" fzf {{{
-augroup fzf
+" ctrlp {{{
+augroup ctrlp
   autocmd!
-  " Open fzf with ;
-  map ; :Files<CR>
 
-  " Include hidden files in fzf search
-  let $FZF_DEFAULT_COMMAND="find . -path '*/\.*' -type d -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//"
+  let g:ctrlp_cmd = 'CtrlPMRU'
 
-  noremap <silent> <leader>/ :History<CR>
-  noremap <silent> <leader>? :execute 'Ag ' . input('Ag/')<CR>
+  " Ignore files in .gitignore
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 augroup END
 " }}}
 
@@ -79,8 +76,7 @@ augroup END
 " }}}
 
 call plug#begin('~/.vim/plugged')
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'powerline/powerline'
@@ -97,6 +93,5 @@ Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
-Plug 'brooth/far.vim'
 call plug#end()
 

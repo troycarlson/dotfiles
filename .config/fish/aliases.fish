@@ -28,6 +28,7 @@ alias v="vim"
 alias rserve="bundle exec rails s"
 alias rcon="bundle exec rails c"
 alias zzz="pmset displaysleepnow"
+alias ip="ifconfig | grep 10.0"
 
 # Overrides
 alias sudo="sudo -E " # carry over environment to sudo commands

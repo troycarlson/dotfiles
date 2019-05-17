@@ -39,7 +39,7 @@ augroup END
 augroup nerdtree
   autocmd!
   let NERDTreeShowHidden=1
-  let NERDTreeIgnore = ['\.swp$']
+  let NERDTreeIgnore = ['\.swp$', '\.DS_Store$']
 
   " Open with ctl+N
   map <C-n> :NERDTreeToggle<CR>

@@ -17,6 +17,8 @@ augroup general_config
   set ignorecase
   set smartcase
   set noshowmode
+  set backupdir=$TEMP//
+  set directory=$TEMP//
 
   noremap <silent> <leader>c :noh<CR>
 

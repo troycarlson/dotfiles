@@ -97,5 +97,6 @@ Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 

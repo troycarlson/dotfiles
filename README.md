@@ -1,9 +1,12 @@
 # dotfiles
 
-## Prerequisites
-TODO: Move this to an executable script.
+## TODO
+* Move prerequisite setup to script
+* Add section about preferred terminals on macOS/Linux
+* Add portable cross platform support
 
-There are a few Homebrew formulae this setup depends on.
+## Prerequisites
+There are a few packages this setup depends on.
 
 ```shell
 brew update # latest Homebrew

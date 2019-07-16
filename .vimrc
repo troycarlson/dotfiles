@@ -18,7 +18,7 @@ augroup general_config
   set smartcase
   set noshowmode
 
-  noremap <silent> <leader>c :noh<CR>
+  noremap <leader><leader>c :noh<CR>
 
   colorscheme solarized8_dark
 augroup END

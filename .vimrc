@@ -98,5 +98,6 @@ Plug 'leafgarland/typescript-vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 call plug#end()
 

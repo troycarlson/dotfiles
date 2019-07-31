@@ -4,6 +4,7 @@ function dj
   # Make sure we're in a valid Django directory
   if ! command ls | grep -q manage.py
     echo 'dj must be run in a valid Django directory'
+    return
   end
 
   set cmd $argv[1]

@@ -24,14 +24,12 @@ augroup general_config
 augroup END
 " }}}
 
-" ctrlp {{{
-augroup ctrlp
+" fzf {{{
+augroup fzf
   autocmd!
 
-  let g:ctrlp_cmd = 'CtrlPMRU'
-
-  " Ignore files in .gitignore
-  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+  let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+  nmap <leader>f :FZF<CR>
 augroup END
 " }}}
 
@@ -45,7 +43,7 @@ augroup nerdtree
   map <C-n> :NERDTreeToggle<CR>
 
   " Highlight current file in tree
-  nmap <leader>f :NERDTreeFind<CR>
+  nmap <leader><leader>f :NERDTreeFind<CR>
 
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 augroup END
@@ -80,7 +78,8 @@ augroup END
 " }}}
 
 call plug#begin('~/.vim/plugged')
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'powerline/powerline'

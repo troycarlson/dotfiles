@@ -30,6 +30,7 @@ augroup fzf
 
   let $FZF_DEFAULT_COMMAND = 'ag -g ""'
   nmap <leader>f :FZF<CR>
+  nmap ; :History<CR>
 augroup END
 " }}}
 

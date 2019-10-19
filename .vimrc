@@ -2,6 +2,30 @@
 let mapleader="\<Space>"
 " }}}
 
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'powerline/powerline'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'w0rp/ale'
+Plug 'tpope/vim-fugitive'
+Plug 'wincent/terminus'
+Plug 'farmergreg/vim-lastplace'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'fatih/vim-go'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plug 'Valloric/YouCompleteMe'
+call plug#end()
+
 " General config {{{
 augroup general_config
   autocmd!
@@ -77,27 +101,3 @@ augroup fugitive
   nnoremap <space>go :Git checkout<Space>
 augroup END
 " }}}
-
-call plug#begin('~/.vim/plugged')
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'powerline/powerline'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'w0rp/ale'
-Plug 'tpope/vim-fugitive'
-Plug 'wincent/terminus'
-Plug 'farmergreg/vim-lastplace'
-Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-rails'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'leafgarland/typescript-vim'
-Plug 'easymotion/vim-easymotion'
-Plug 'fatih/vim-go'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
-call plug#end()
-

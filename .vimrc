@@ -24,6 +24,8 @@ Plug 'fatih/vim-go'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'Valloric/YouCompleteMe'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 call plug#end()
 
 " General config {{{
@@ -99,5 +101,13 @@ augroup fugitive
   nnoremap <space>blame :Gblame<CR>
   nnoremap <space>gb :Git branch<Space>
   nnoremap <space>go :Git checkout<Space>
+augroup END
+" }}}
+"
+" ultisnips {{{
+augroup ultisnips
+  autocmd!
+
+  let g:UltiSnipsExpandTrigger="<C-j>"
 augroup END
 " }}}

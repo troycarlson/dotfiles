@@ -69,8 +69,8 @@ augroup nerdtree
   " Open with ctl+N
   map <C-n> :NERDTreeToggle<CR>
 
-  " Highlight current file in tree
-  nmap <leader><leader>f :NERDTreeFind<CR>
+  " [s]how file in tree
+  nmap <leader>s :NERDTreeFind<CR>
 
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 augroup END

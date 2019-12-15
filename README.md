@@ -54,6 +54,23 @@ dots commit -m "Added a cool new Vim plugin"
 dots push
 ```
 
+## New Machine Setup
+
+1. Install Homebrew
+
+2. Install everything else
+  - `$ brew cask install iterm2`
+  - `$ brew cask install fish`
+  - `$ brew cask install karabiner-elements`
+  - `$ brew install tmux`
+  - `$ brew install vim`
+  - `$ brew install git`
+  - `$ brew install node`
+  - `$ brew install htop`
+  
+3. Clone dotfiles repository
+
+
 ## Fish Setup
 
 Install Oh My Fish and optionally a theme (I like agnoster). See the [Oh My Fish](https://ohmyz.sh/) docs for installation instructions.

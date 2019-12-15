@@ -22,7 +22,7 @@
 
 **1. Clone the repository**
 ```shell
-git clone --bare <git-repo-url> $HOME/.dotfiles
+$ git clone --bare <git-repo-url> $HOME/.dotfiles
 ```
 
 **2. Define the alias in the current shell scope**

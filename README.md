@@ -1,22 +1,24 @@
 # dotfiles
 
-## TODO
-* Move prerequisite setup to script
-* Add section about preferred terminals on macOS/Linux
-* Add portable cross platform support
+## New Machine Setup
 
-## Prerequisites
-There are a few packages this setup depends on.
+**1. Install Homebrew via https://brew.sh/**
 
-```shell
-brew update # latest Homebrew
-brew upgrade # latest formulae
-brew install fzf
-brew install the_silver_searcher
-brew install fish
-```
+**2. Install everything else**
+  - `$ brew cask install iterm2`
+  - `$ brew cask install fish`
+  - `$ brew cask install karabiner-elements`
+  - `$ brew install tmux`
+  - `$ brew install vim`
+  - `$ brew install git`
+  - `$ brew install node`
+  - `$ brew install htop`
+  - `$ brew install fzf`
+  - `$ brew install the_silver_searcher`
+  
+**3. Set up dotfiles**
 
-## Setup
+## Dotfiles Setup
 
 **1. Clone the repository**
 ```shell
@@ -25,17 +27,17 @@ git clone --bare <git-repo-url> $HOME/.dotfiles
 
 **2. Define the alias in the current shell scope**
 ```shell
-alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+$ alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
 
 **3. Check out the repository content**
 ```shell
-dots checkout
+$ dots checkout
 ```
 
 **4. Ignore untracked files**
 ```shell
-dots config --local status.showUntrackedFiles no
+$ dots config --local status.showUntrackedFiles no
 ```
 
 **5. Update variables**
@@ -47,29 +49,12 @@ Review all of the files and update any usernames/variables for your own purposes
 Use the `dots` alias to manage this repository just like you would a normal Git repository.
 
 ```shell
-dots status
-dots pull
-dots add ~/.vimrc
-dots commit -m "Added a cool new Vim plugin"
-dots push
+$ dots status
+$ dots pull
+$ dots add ~/.vimrc
+$ dots commit -m "Added a cool new Vim plugin"
+$ dots push
 ```
-
-## New Machine Setup
-
-1. Install Homebrew
-
-2. Install everything else
-  - `$ brew cask install iterm2`
-  - `$ brew cask install fish`
-  - `$ brew cask install karabiner-elements`
-  - `$ brew install tmux`
-  - `$ brew install vim`
-  - `$ brew install git`
-  - `$ brew install node`
-  - `$ brew install htop`
-  
-3. Clone dotfiles repository
-
 
 ## Fish Setup
 
@@ -78,8 +63,8 @@ Install Oh My Fish and optionally a theme (I like agnoster). See the [Oh My Fish
 Install the agnoster theme:
 
 ```shell
-omf install agnoster
-omf theme agnoster
+$ omf install agnoster
+$ omf theme agnoster
 ```
 
 ## Resources
@@ -98,3 +83,7 @@ I use this for the sole purpose of making my caps lock key behave like the escap
 [Atlassian post](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
 [Random person's setup notes](https://github.com/Siilwyn/my-dotfiles/tree/master/.my-dotfiles)
+
+## TODO
+* Add section about preferred terminals on macOS/Linux
+* Add portable cross platform support

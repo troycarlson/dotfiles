@@ -58,7 +58,7 @@ $ dots push
 
 ## Fish Setup
 
-Install Oh My Fish and optionally a theme (I like agnoster). See the [Oh My Fish](https://ohmyz.sh/) docs for installation instructions.
+Install Oh My Fish and optionally a theme (I like agnoster). See the [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish) docs for installation instructions.
 
 Install the agnoster theme:
 
@@ -69,7 +69,7 @@ $ omf theme agnoster
 
 ## Resources
 
-[Oh My Fish](https://ohmyz.sh/)
+[Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
 
 Oh My Fish provides core infrastructure to allow you to install packages which extend or modify the look of your shell.
 

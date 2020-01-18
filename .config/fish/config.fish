@@ -9,6 +9,9 @@ set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
 
+# Postgres
+set PATH /usr/local/opt/postgresql@11/bin $PATH
+
 set -g fish_user_paths "/usr/local/opt/libpq/bin" $fish_user_paths
 
 # The next line updates PATH for the Google Cloud SDK.

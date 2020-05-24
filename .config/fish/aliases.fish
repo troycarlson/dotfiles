@@ -30,6 +30,7 @@ alias rcon="bundle exec rails c"
 alias zzz="pmset displaysleepnow"
 alias ip="ifconfig | grep 10.0"
 alias django="python3 manage.py"
+alias code='/Applications/Visual\ Studio\ Code.app'
 
 # Overrides
 alias sudo="sudo -E " # carry over environment to sudo commands

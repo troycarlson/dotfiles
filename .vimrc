@@ -26,6 +26,7 @@ Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'Valloric/YouCompleteMe'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 call plug#end()
 
 " General config {{{
@@ -50,6 +51,14 @@ augroup general_config
 augroup END
 " }}}
 
+" ALE {{{
+augroup ALE
+  autocmd!
+  let g:ale_fixers = ['prettier-eslint']
+  let g:ale_fix_on_save = 1
+augroup END
+" }}}
+"
 " fzf {{{
 augroup fzf
   autocmd!

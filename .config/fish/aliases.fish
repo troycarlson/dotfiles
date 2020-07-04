@@ -30,7 +30,12 @@ alias rcon="bundle exec rails c"
 alias zzz="pmset displaysleepnow"
 alias ip="ifconfig | grep 10.0"
 alias django="python3 manage.py"
-alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --user-data-dir ~/.config/vscode/'
+switch (machine_name)
+    case 'macbook'
+        alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --user-data-dir ~/.config/vscode/'
+    case 'workstation'
+        alias code='/usr/bin/code --user-data-dir ~/.config/vscode/'
+end
 
 # Overrides
 alias sudo="sudo -E " # carry over environment to sudo commands

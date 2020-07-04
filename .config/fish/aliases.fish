@@ -1,5 +1,5 @@
 # Required for my dotfile management setup
-alias dots='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dots=(which git)' --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Make sure tmux plays nicely with vim themes
 alias tmux="env TERM=screen-256color-bce tmux"

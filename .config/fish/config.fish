@@ -1,13 +1,20 @@
 set default_user "troycarlson"
 fish_vi_key_bindings
 
+function config_log
+    echo [(status --current-filename)] $argv
+end
+
 source ~/.config/fish/aliases.fish
 source ~/.config/fish/functions.fish
 
-# rbenv configuration
-set PATH $HOME/.rbenv/bin $PATH
-set PATH $HOME/.rbenv/shims $PATH
-rbenv rehash >/dev/null ^&1
+# Ruby config
+if test (which ruby)
+    set PATH $HOME/.rbenv/bin $PATH
+    set PATH $HOME/.rbenv/shims $PATH
+else
+    config_log "Couldn't find Ruby, skipping Ruby config"
+end
 
 # Postgres
 set PATH /usr/local/opt/postgresql@11/bin $PATH

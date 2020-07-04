@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "editor.lineNumbers": "relative",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontFamily": "Meslo LG S for Powerline"
+}

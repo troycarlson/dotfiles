@@ -30,7 +30,7 @@ alias rcon="bundle exec rails c"
 alias zzz="pmset displaysleepnow"
 alias ip="ifconfig | grep 10.0"
 alias django="python3 manage.py"
-alias code='/Applications/Visual\ Studio\ Code.app'
+alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --user-data-dir ~/.config/vscode/'
 
 # Overrides
 alias sudo="sudo -E " # carry over environment to sudo commands
@@ -42,3 +42,4 @@ alias free="free -m"  # human-readable sizes
 alias ll="ls -l"      # detailed file list
 alias la="ls -lA"     # detailed file list with hidden files
 alias wh="which -aS"  # Informative version of which
+alias python="/usr/local/bin/python3"

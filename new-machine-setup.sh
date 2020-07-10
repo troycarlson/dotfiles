@@ -6,6 +6,7 @@ exit
 # Linux-specific
 # =============================================================================
 
+sudo apt update
 sudo apt install htop \
                  curl \
                  git \
@@ -36,7 +37,7 @@ brew install htop \
 echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 
 # =============================================================================
-# Generic setup
+# Generic system setup
 # =============================================================================
 
 # Set fish as default shell
@@ -46,7 +47,26 @@ chsh -s /usr/bin/fish
 curl -L https://get.oh-my.fish | fish
 
 # Install an oh-my-fish theme
-# Note: if a theme depends on Powerline glyphs, iTerm2 on macOS supports these
-#       without installing Powerline patched fonts
-#       Preferences > Profiles > Text > "Use built-in Powerline glyphs"
+# Note: if a theme depends on Powerline glyphs, iTerm2 on macOS supports
+#       these without installing Powerline patched fonts:
+#       > Preferences > Profiles > Text > "Use built-in Powerline glyphs"
 omf install agnoster
+
+# =============================================================================
+# Dotfiles setup
+# =============================================================================
+
+# 1. Clone the repository
+git clone --bare <git-repo-url> $HOME/.dotfiles
+
+# 2. Define the alias in the current shell scope
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# 3. Check out the repository content
+dots checkout
+
+# 4. Ignore untracked files
+dots config --local status.showUntrackedFiles no
+
+# 5. Review all of the files and update any usernames/variables for your
+#    own purposes.

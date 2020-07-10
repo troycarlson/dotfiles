@@ -2,21 +2,7 @@
 
 ## New Machine Setup
 
-**1. Install Homebrew via https://brew.sh/**
-
-**2. Install everything else**
-  - `$ brew cask install iterm2`
-  - `$ brew cask install fish`
-  - `$ brew cask install karabiner-elements`
-  - `$ brew install tmux`
-  - `$ brew install vim`
-  - `$ brew install git`
-  - `$ brew install node`
-  - `$ brew install htop`
-  - `$ brew install fzf`
-  - `$ brew install the_silver_searcher`
-  
-**3. Set up dotfiles**
+See `new-machine-setup.sh`.
 
 ## Dotfiles Setup
 

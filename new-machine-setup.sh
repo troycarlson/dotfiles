@@ -6,13 +6,18 @@ exit
 # Linux-specific
 # =============================================================================
 
+# Install fish (latest instructions here: https://https://fishshell.com/)
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt-get update
+sudo apt-get install fish
+
+# Install other tools
 sudo apt update
 sudo apt install htop \
                  curl \
                  git \
                  vim \
                  tmux \
-                 fish \
                  xcape
 
 # =============================================================================

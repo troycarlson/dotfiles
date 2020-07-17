@@ -35,7 +35,7 @@ switch (machine_name)
     case 'macbook'
         alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --user-data-dir ~/.config/vscode/'
     case 'workstation'
-        alias code='/usr/bin/code --user-data-dir ~/.config/vscode/'
+        alias code='/snap/bin/code --user-data-dir ~/.config/vscode/'
 end
 
 # Overrides

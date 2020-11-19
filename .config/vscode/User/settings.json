@@ -1,5 +1,7 @@
 {
     "editor.lineNumbers": "relative",
     "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.fontFamily": "Meslo LG S for Powerline"
+    "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
+    "files.associations": {
+    }
 }

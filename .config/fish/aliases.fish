@@ -36,6 +36,7 @@ switch (machine_name)
         alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --user-data-dir ~/.config/vscode/'
     case 'workstation'
         alias code='/snap/bin/code --user-data-dir ~/.config/vscode/'
+        alias datagrip='/opt/DataGrip/DataGrip-2020.1.5/bin/datagrip.sh'
 end
 
 # Overrides

@@ -20,6 +20,6 @@ if test (which psql)
 end
 
 
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/troycarlson/google-cloud-sdk/path.fish.inc' ]; . '/Users/troycarlson/google-cloud-sdk/path.fish.inc'; end
-

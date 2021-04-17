@@ -39,7 +39,7 @@ switch (machine_name)
         alias datagrip='/opt/DataGrip/DataGrip-2020.1.5/bin/datagrip.sh'
 end
 alias vstart="gcloud compute instances start troy-workstation && gcloud compute config-ssh"
-alias vssh="ssh (cat ~/.ssh/config | grep Host\ troy-workstation | cut -d' ' -f2)"
+alias vssh="gcloud compute ssh troy-workstation -- -L 8000:localhost:8000 -L 3000:localhost:3000"
 
 # Overrides
 alias sudo="sudo -E " # carry over environment to sudo commands

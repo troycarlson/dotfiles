@@ -58,9 +58,9 @@ end
 # -----------------------------------------------------------------------------
 function tt_tmux
   if command tmux ls | grep -q created
-    tmux a -d -t (machine_name)
+    tmux -CC a -d -t (machine_name)
   else
-    tmux new -s (machine_name)
+    tmux -CC new -s (machine_name)
   end
 end
 

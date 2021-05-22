@@ -19,7 +19,10 @@ if test (which psql)
     set -g fish_user_paths "/usr/local/opt/libpq/bin" $fish_user_paths
 end
 
-
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/troycarlson/google-cloud-sdk/path.fish.inc' ]; . '/Users/troycarlson/google-cloud-sdk/path.fish.inc'; end
+
+# Starship prompt 
+if test (which starship)
+    starship init fish | source
+end
